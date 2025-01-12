@@ -2454,6 +2454,8 @@ input, select, textarea {
 
 		#main section:first-of-type {
 			padding-top: 2em;
+			padding-left: 4em;
+			padding-right: 4em;
 		}
 
 /* Footer */
