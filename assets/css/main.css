@@ -2055,7 +2055,7 @@ input, select, textarea {
 	.button {
 		position: relative;
 		display: inline-block;
-		background: #df7366;
+		background: #4955f5;
 		color: #fff;
 		text-align: center;
 		border-radius: 0.5em;
@@ -2077,7 +2077,7 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			color: #fff;
-			background: #ef8376;
+			background: #6d76fc;
 		}
 
 		input[type="button"].alt,
@@ -2165,7 +2165,7 @@ input, select, textarea {
 	.wrapper {
 		background: #fff;
 		margin: 0 0 2em 0;
-		padding: 6em 0 6em 0;
+		padding: 0em 0 6em 0;
 	}
 
 		.wrapper.style2 {
@@ -2183,7 +2183,7 @@ input, select, textarea {
 		background-attachment: fixed;
 		color: #fff;
 		text-align: center;
-		padding: 7.5em 0 2em 0;
+		padding: 0em 0 2em 0;
 		cursor: default;
 	}
 
@@ -2196,6 +2196,7 @@ input, select, textarea {
 
 		#header .inner {
 			position: relative;
+			padding-top: 5em;
 			z-index: 1;
 			margin: 0;
 			display: inline-block;
@@ -2207,7 +2208,7 @@ input, select, textarea {
 		}
 
 			#header header > p {
-				font-size: 1.25em;
+				font-size: 1.6em;
 				margin: 0;
 			}
 
@@ -2283,13 +2284,14 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
+		background-color: rgb(0,0,0);
 		width: 100%;
 		text-align: center;
 		padding: 1.5em 0 1.5em 0;
-		z-index: 1;
+		z-index: 1000;
 		overflow: hidden;
 	}
 
@@ -2453,6 +2455,8 @@ input, select, textarea {
 
 		#main section:first-of-type {
 			padding-top: 2em;
+			padding-left: 4em;
+			padding-right: 4em;
 		}
 
 /* Footer */
@@ -3135,5 +3139,14 @@ input, select, textarea {
 					.carousel article .image {
 						margin-bottom: 2em;
 					}
+			#overlay-text {
+				position: absolute;
+				z-index: 1;
+			}
 
+			#back-image {
+				position: relative;
+				z-index: -1;
+			}
+			
 	}
