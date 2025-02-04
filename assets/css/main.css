@@ -2177,7 +2177,6 @@ input, select, textarea {
 	#header {
 		position: relative;
 		background: #000;
-		/*background-image: url("../../images/header.jpg");*/
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -3061,6 +3060,10 @@ input, select, textarea {
 					padding-left: 1em;
 					padding-right: 1em;
 				}
+					
+					#header .inner .kuula-container {
+						height: 2em;
+					}
 
 				#header header > p {
 					font-size: 1em;
@@ -3077,7 +3080,7 @@ input, select, textarea {
 
 			body.homepage #header {
 				min-height: 0;
-				padding: 5.5em 0 5em 0;
+				padding: 1em 0 5em 0;
 				height: auto;
 			}
 
