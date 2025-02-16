@@ -134,6 +134,18 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				document.querySelectorAll("a").forEach(link => {
+					if (link.hostname !== location.hostname) {
+						link.addEventListener("click", function() {
+							gtag('event', 'outbound_click', {
+								'event_category': 'Outbound',
+								'event_label': link.href
+							});
+						});
+					}
+				});
+			</script>
 
 	</body>
 </html>
