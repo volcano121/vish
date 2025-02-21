@@ -2155,6 +2155,15 @@ input, select, textarea {
 			text-align: center;
 			font-size: 1.25em;
 		}
+		.icon.logos {
+			position: relative;
+			display: inline-block;
+			color: #fff;
+			height: 3em;
+			line-height: 3em;
+			text-align: center;
+			font-size: 1.25em;
+		}
 
 			header .icon.circled {
 				margin: 0 0 2em 0;
