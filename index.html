@@ -153,25 +153,19 @@
 		<script src="assets/js/main.js"></script>
 		<script>
 			document.addEventListener("DOMContentLoaded", function () {
-				setTimeout(() => {
-					let kuulaIframe = document.querySelector("iframe[src*='kuula.io']");
+				let kuulaContainer = document.getElementById("kuula-container");
 
-					if (kuulaIframe) {
-						kuulaIframe.contentWindow.document.addEventListener("click", function (event) {
-							/*let target = event.target.closest("a"); // Проверяем, клик по ссылке?*/
-							if (target) {
-								console.log("Переход из Kuula:", target.href);
-								gtag('event', 'kuula_link_click', {
-									'event_category': 'Kuula',
-									'event_label': target.href
-								});
-							}
+				if (kuulaContainer) {
+					kuulaContainer.addEventListener("click", function () {
+						console.log("Клик в Kuula!");
+						gtag('event', 'kuula_click', {
+							'event_category': 'Kuula',
+							'event_label': 'Any Click'
 						});
-					}
-				}, 3000); // Подождём 3 сек, чтобы Kuula подгрузился
+					});
+				}
 			});
 		</script>
-
 
 
 	</body>
