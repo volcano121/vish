@@ -2163,6 +2163,18 @@ input, select, textarea {
 			line-height: 3em;
 			text-align: center;
 			font-size: 1.25em;
+			margin: 0.4em;
+		}
+		.icon.ang {
+			position: relative;
+			display: inline-block;
+			color: #fff;
+			height: 2.5em;
+			width: 10em;
+			line-height: 3em;
+			text-align: center;
+			font-size: 1.25em;
+			margin: 0.4em;
 		}
 
 			header .icon.circled {
