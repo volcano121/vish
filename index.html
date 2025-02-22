@@ -56,7 +56,7 @@
 					<h2>Our partners:</h2>
 					<img class="icon logos" src="images/logo_2_blender.png" />
 					<img class="icon logos" src="images/logo_3_viyar.png" />
-					<img class="icon logos" src="images/logo_4_ang.png" />
+					<img class="icon ang" src="images/logo_4_ang.png" />
 					<img class="icon logos" src="images/logo_5_tea.png" />
 					<img class="icon logos" src="images/logo_6_mdf.png" />
 				</header>
@@ -153,17 +153,16 @@
 		<script src="assets/js/main.js"></script>
 		<script>
 			document.addEventListener("DOMContentLoaded", function () {
-				let kuulaContainer = document.getElementById("kuula-container");
-
-				if (kuulaContainer) {
-					kuulaContainer.addEventListener("click", function () {
-						console.log("Клик в Kuula!");
-						gtag('event', 'kuula_click', {
-							'event_category': 'Kuula',
-							'event_label': 'Any Click'
+				document.body.addEventListener("click", function (event) {
+					let link = event.target.closest("a"); // Ищем клик по ссылке
+					if (link && link.href.startsWith("http") && !link.href.includes(window.location.hostname)) {
+						console.log("Переход на внешний сайт:", link.href);
+						gtag('event', 'outbound_click', {
+							'event_category': 'Outbound',
+							'event_label': link.href
 						});
-					});
-				}
+					}
+				});
 			});
 		</script>
 
