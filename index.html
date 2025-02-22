@@ -158,7 +158,7 @@
 
 					if (kuulaIframe) {
 						kuulaIframe.contentWindow.document.addEventListener("click", function (event) {
-							let target = event.target.closest("a"); // Проверяем, клик по ссылке?
+							/*let target = event.target.closest("a"); // Проверяем, клик по ссылке?*/
 							if (target) {
 								console.log("Переход из Kuula:", target.href);
 								gtag('event', 'kuula_link_click', {
