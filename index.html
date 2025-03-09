@@ -14,19 +14,19 @@
 	<link rel="icon" href="images/icon.png" type="image/x-icon">
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-2F1KWKTVPH"></script>
-	<script>
+	<!--<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 
 		gtag('config', 'G-2F1KWKTVPH');
-	</script>
+	</script>-->
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 
-        gtag('config', 'G-94QK29RX0H');
+        gtag('config', 'G-DM08K8BXGL');
 	</script>
 </head>
 	<body class="homepage is-preload">
@@ -157,20 +157,7 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-		<script>
-			document.addEventListener("DOMContentLoaded", function () {
-				document.body.addEventListener("click", function (event) {
-					let link = event.target.closest("iframe"); // Ищем клик по ссылке
-					if (link && link.href.startsWith("http") && !link.href.includes(window.location.hostname)) {
-						console.log("Переход на внешний сайт:", link.href);
-						gtag('event', 'outbound_click', {
-							'event_category': 'Outbound',
-							'event_label': link.href
-						});
-					}
-				});
-			});
-		</script>
+		
 
 
 	</body>
